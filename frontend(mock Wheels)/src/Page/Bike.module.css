@@ -1,0 +1,178 @@
+/* Overall container for the bike page */
+.container_bike {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Navbar */
+.top_navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(90deg, #1f1f1f, #333333); /* Dark gradient for navbar */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.navbar_brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dealer {
+  margin-left: auto;
+}
+
+.custom_button {
+  padding: 7px 25px;
+  background: linear-gradient(90deg, #3a3a3a, #565656); /* Dark button gradient */
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.custom_button:hover {
+  background: linear-gradient(90deg, #565656, #3a3a3a);
+  transform: translateY(-3px);
+}
+
+/* Styles for the bike section */
+.RoyalEnfield_bike {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Meteor_bike {
+  font-size: 1.5rem;
+  color: #6c757d;
+  text-align: center;
+}
+
+.p_bike {
+  font-size: 1rem;
+  color: #495057;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image_container_bike {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.image_transition_bike {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.color_bike {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.button_container_bike {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.style.color_bike{
+  color:black
+}
+
+.button_red,
+.button_blue,
+.button_green {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  border: 2px solid #343a40;
+}
+
+.button_red {
+  background-color: #ff0000;
+  color: white;
+}
+
+.button_blue {
+  background-color: #315271;
+  color: white;
+}
+
+.button_green {
+  background-color: #758269;
+}
+
+.testdrive_bike {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.testdrive_bike:hover {
+  background-color: #218838;
+}
+
+/* Bottom Navbar */
+.bottom_navbar {
+  position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #303030, #121212); /* Dark gradient for bottom navbar */
+    z-index: 1000;
+    padding: 15px;
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.footer_nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer_button {
+  padding: 5px 20px;
+  font-size: 14px;
+  background: rgba(8, 8, 8, 0.8); /* Dark semi-transparent background */
+  color: #ffffff;
+  border: 2px solid rgba(8, 8, 8, 0.8);
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.footer_button:hover {
+  background: rgba(24, 90, 157, 0.8);
+  border: 2px solid rgba(24, 90, 157, 0.8);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}

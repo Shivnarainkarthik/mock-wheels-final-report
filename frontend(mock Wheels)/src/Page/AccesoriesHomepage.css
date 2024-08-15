@@ -1,0 +1,47 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(3, 1fr); /* 3 rows */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the grid */
+  max-width: 1200px; /* Max width for the grid */
+  margin: auto; /* Center the grid */
+}
+.app-container-acc{
+  background-color: black;
+}
+.card {
+  background-color: #ffffff; /* Light background for cards */
+  border: 1px solid #e0e0e0; /* Subtle border color */
+  border-radius: 12px; /* More rounded corners */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  cursor: pointer; /* Change cursor on hover */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children */
+  justify-content: flex-start; /* Align items to the top */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight elevation on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card img {
+  width: 100%; /* Full width of the card */
+  height: 300px; /* Fixed height for all images */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+  border-bottom: 1px solid #e0e0e0; /* Border between image and content */
+}
+
+.card-title {
+  margin-top: 15px; /* Space between image and text */
+  font-size: 24px; /* Font size for the title */
+  color: #444; /* Slightly darker text color */
+  text-align: center; /* Center the text */
+  font-weight: 600; /* Semi-bold text */
+  padding: 0 15px; /* Horizontal padding for consistent spacing */
+  flex-grow: 0; /* Prevent the title from growing */
+}

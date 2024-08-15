@@ -1,0 +1,161 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: #ffffff; /* White text for readability */
+}
+
+/* App container */
+.app-container { /* Dark background for contrast */
+    position: relative;
+    height: 100vh;
+}
+
+/* Top navbar */
+.top-navbar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: linear-gradient(90deg, #303030, #595959); /* Dark gradient for navbar */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff; /* White for the brand color */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.search-input {
+    padding: 10px 20px;
+    margin-right: 15px;
+    border: 2px solid #ffffff; /* White border for contrast */
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly frosted effect */
+    color: #121212; /* Dark text for input */
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.search-input:focus {
+    border-color: #ff6f61; /* Bright focus color */
+    transform: scale(1.05); /* Slight zoom on focus */
+}
+
+.search-button {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #f0efef, #f0efef); /* Gradient for the button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.search-button:hover {
+    background: linear-gradient(90deg, #f6f2f0, #f2eeed); /* Reverse gradient on hover */
+    transform: scale(1.1); /* Larger zoom on hover */
+}
+
+.dealer {
+    display: flex;
+    gap: 30px;
+}
+
+.dealer a {
+    text-decoration: none;
+    color: #ff9a76; /* Bright color for links */
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.dealer a:hover {
+    color: #ff6f61; /* Hover color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow on hover */
+}
+
+/* Ensure the image covers the entire background */
+.image-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.image-background img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the div without stretching */
+    top: 0;
+    left: 0;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Dark overlay */
+    z-index: 0; /* Ensure overlay is above the image but below text */
+}
+
+/* Centered text */
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff8f89a; /* White for clarity */
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    z-index: 1; /* Ensure text is above the overlay */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow for emphasis */
+}
+
+
+/* Bottom navbar */
+.bottom-navbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #303030, #121212); /* Dark gradient for bottom navbar */
+    z-index: 1000;
+    padding: 15px;
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ff9a76; /* Hover color for footer links */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow on hover */
+}

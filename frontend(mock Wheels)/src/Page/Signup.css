@@ -1,0 +1,88 @@
+/* Global styles for signup page */
+.signup-wrapper {
+  margin: 0;
+  background: url('C:\projectReview2\Karthi-2\public\assets\ben4k.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+/* Container for the signup box */
+.signup-form-container {
+ /* Darker overlay for better contrast */
+  padding: 40px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+/* Styling for the signup heading */
+.signup-form-container h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 2.5em; /* Adjusted size for balance */
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Styling for input fields */
+.signup-form input {
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #444; /* Dark border for better contrast */
+  border-radius: 8px; /* More rounded corners */
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Placeholder styling */
+.signup-form input::placeholder {
+  color: #aaa;
+}
+
+/* Styling for the signup button */
+.signup-form button {
+  width: 100%;
+  height: 40px;
+  background: #ff5722; /* Vibrant color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.signup-form button:hover {
+  background: #e64a19; /* Slightly darker on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Error message styling */
+.error {
+  color: #fff;
+  text-align: left;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+/* Additional form styling */
+form.signup-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}

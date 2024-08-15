@@ -1,0 +1,66 @@
+.test-drive-wrapper {
+  min-height: 100vh;
+  background: url('C:\projectReview2\Karthi-2\public\assets\pexels-eduardo-cardenaz-76946233-25551904.jpg') no-repeat center center fixed; /* Correct image alignment */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px; /* Ensure spacing around the form on smaller screens */
+}
+
+.test-drive-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px 30px; /* Add more padding for better content spacing */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly increase opacity for better readability */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow for a lifted effect */
+}
+
+.test-drive-form h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-field,
+.message-box,
+.submit-btn {
+  width: 100%; /* Ensure full width within the form */
+  margin-bottom: 15px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-field {
+  height: 40px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.6); /* Add background color to inputs */
+}
+
+.input-field::placeholder {
+  color: #aaa; /* Adjust placeholder color for better contrast */
+}
+
+.message-box {
+  padding: 10px;
+  border: 2px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.6); /* Add background color to text area */
+}
+
+.submit-btn {
+  height: 40px;
+  background: #7c0a02;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #5a0501; /* Darker shade on hover */
+}
